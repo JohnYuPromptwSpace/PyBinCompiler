@@ -1,5 +1,7 @@
 PyBinCompiler Version 0.1 Standard
 
+For every '\n' you usually type with python as "ENTER", you have to write ';' which is 0111011.
+
 "0100000": "space"
 "0100001": "!"
 "0100010": '"'
