@@ -255,7 +255,7 @@ Examples:
         return COMPILDE_CODE
 
     def writeCode(self, TITLE, COMPILDE_CODE):
-        PATH = os.getcwd() + f"\\build\\{TITLE}.py"
+        PATH = os.getcwd() + f"\\build\\{TITLE}"
         DIR = os.path.dirname(PATH)
 
         if not os.path.exists(DIR):
@@ -264,7 +264,7 @@ Examples:
         with open(PATH, "w", encoding="utf-8") as file:
             file.write(COMPILDE_CODE)
 
-        print(f"Finished compiling '{sys.argv[3]}' Made file '{TITLE}.py' at '{PATH}'")
+        print(f"Finished compiling '{sys.argv[3]}' Made file '{TITLE}' at '{PATH}'")
     
     def runCode(self, COMPILDE_CODE):
         exec(json.loads(json.dumps(COMPILDE_CODE)))
