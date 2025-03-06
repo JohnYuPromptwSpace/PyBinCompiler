@@ -4,7 +4,7 @@
 ---
 
 ### **📌 `README.md` 파일**
-```md
+
 # 🏗️ PyBinCompiler
 
 **PyBinCompiler** is a binary-to-Python compiler that translates binary-encoded text into executable Python scripts. It allows users to run compiled code directly or save it as a Python file.
@@ -21,9 +21,8 @@
 ## 🚀 Usage
 
 ### **Command Format**
-```bash
+
 python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
-```
 
 ### **Arguments:**
 | Argument | Type | Description |
