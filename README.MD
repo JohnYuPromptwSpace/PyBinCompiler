@@ -60,7 +60,8 @@ python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True
 📦 PyBinCompiler
  ┣ 📂 toolchain
  ┃ ┣ 📂 PyBinCompiler_v0.1
- ┃ ┃  # Main compiler script
+ ┃ ┃ ┣ 📜 PyBinCompiler_v0.1.py # Main compiler script
+ ┃ ┃ ┣ 📜 PyBinCompiler Version 0.1 Standard # Binary Code Information
  ┣ 📂 build                      # Compiled Python files
  ┣ 📜 README.MD # Documentation
 ```
