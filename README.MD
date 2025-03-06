@@ -31,6 +31,12 @@ python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <T
 
 ## 🔹 Example Usage
 
+### ✅ Explanation:
+```bash
+python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help
+```
+
+
 ### ✅ Run compiled code but do not save:
 ```bash
 python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True False my_binary.txt
@@ -62,7 +68,7 @@ python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True
  ┃ ┣ 📂 PyBinCompiler_v0.1
  ┃ ┃ ┣ 📜 PyBinCompiler_v0.1.py # Main compiler script
  ┃ ┃ ┣ 📜 PyBinCompiler Version 0.1 Standard # Binary Code Information
- ┣ 📂 build                      # Compiled Python files
+ ┣ 📂 build # Compiled Python files
  ┣ 📜 README.MD # Documentation
 ```
 
@@ -85,8 +91,7 @@ PyBinCompiler includes built-in exception handling for various cases:
 ## 🛠 Installation
 To use PyBinCompiler, clone the repository:
 ```bash
-git clone https://github.com/yourusername/PyBinCompiler.git
-cd PyBinCompiler/toolchain/PyBinCompiler_v0.1
+git clone https://github.com/JohnYuPromptwSpace/PyBinCompiler
 ```
 
 Run the compiler with:
