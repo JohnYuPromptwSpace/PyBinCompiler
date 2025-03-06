@@ -95,7 +95,7 @@ git clone https://github.com/JohnYuPromptwSpace/PyBinCompiler
 
 Run the compiler with:
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True my_binary.txt output.py
+python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True test.txt output.py
 ```
 
 ---
