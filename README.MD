@@ -22,7 +22,7 @@ python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <T
 ### **Arguments:**
 | Argument | Type | Description |
 |----------|------|-------------|
-| `<run?>` | `bool (True | False)` | If `True`, executes the compiled code immediately. If `False`, the code is not executed. |
+| `<run?>` | `bool | True! False` | If `True`, executes the compiled code immediately. If `False`, the code is not executed. |
 | `<make file?>` | `bool (True | False)` | If `True`, saves the compiled code as a `.py` file. If `False`, no file is created. |
 | `<TargetFileName>.txt` | `str` | The name of the text file containing binary code. |
 | `<FileName>.py` | `str (optional)` | The name of the output Python file (if `<make file?>` is `True`). Defaults to `"untitled.py"` if not specified. |
