@@ -256,6 +256,11 @@ Examples:
 
     def writeCode(self, TITLE, COMPILDE_CODE):
         PATH = os.getcwd() + f"\\build\\{TITLE}.py"
+        DIR = os.path.dirname(PATH)
+
+        if not os.path.exists(DIR):
+            os.makedirs(DIR)
+        
         with open(PATH, "w", encoding="utf-8") as file:
             file.write(COMPILDE_CODE)
 
