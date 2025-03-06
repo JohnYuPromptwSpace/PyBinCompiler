@@ -14,8 +14,9 @@
 ## 🚀 Usage
 
 ### **Command Format**
-
+```bash
 python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
+```
 
 ### **Arguments:**
 | Argument | Type | Description |
