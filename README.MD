@@ -60,10 +60,9 @@ python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True
 📦 PyBinCompiler
  ┣ 📂 toolchain
  ┃ ┣ 📂 PyBinCompiler_v0.1
- ┃ ┃ ┣ 📜 PyBinCompiler_v0.1.py  # Main compiler script
- ┃ ┃ ┣ 📜 README.md              # Documentation
- ┃ ┃ ┣ 📜 binary_samples.txt     # Sample binary input
+ ┃ ┃  # Main compiler script
  ┣ 📂 build                      # Compiled Python files
+ ┣ 📜 README.MD # Documentation
 ```
 
 ---
@@ -77,7 +76,7 @@ PyBinCompiler includes built-in exception handling for various cases:
 | `InvalidMakeFileOptionError` | `<make file?>` must be `True` or `False`. |
 | `MissingFileError` | No input `.txt` file provided. |
 | `PathNotFoundError` | The specified file path does not exist. |
-| `InvalidKeywordError` | The binary code contains an invalid sequence. |
+| `InvalidKeywordError` | The binary code contains an invalid sequence. |0
 | `LengthValidationError` | Binary code length is not a multiple of 7. |
 
 ---
@@ -102,17 +101,9 @@ We welcome contributions! To contribute:
 2. Create a new branch (`feature-branch`).
 3. Commit your changes (`git commit -m "Added new feature"`).
 4. Push to your fork (`git push origin feature-branch`).
-5. Open a Pull Request!
+5. Open a Pull Request!0
 
 ---
 
 ## 📜 License
-This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
-
----
-
-## 📞 Contact
-For any issues or inquiries, feel free to create an issue on GitHub or contact the maintainer:
-- 📧 Email: your-email@example.com
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
-```
+This project is licensed under the MIT License
