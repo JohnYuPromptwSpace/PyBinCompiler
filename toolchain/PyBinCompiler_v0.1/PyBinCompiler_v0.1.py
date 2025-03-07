@@ -203,10 +203,10 @@ Examples:
         
         COMPILDE_CODE = self.compile(CONTENT, CONTENT_LENGTH)
         
-        if bool(sys.argv[1]):
+        if sys.argv[1] == "True":
             self.runCode(COMPILDE_CODE)
             
-        if bool(sys.argv[2]):
+        if sys.argv[2] == "True":
             self.writeCode(TITLE, COMPILDE_CODE)
     
     def setTitle(self):
