@@ -62,7 +62,7 @@ For every '\n' you usually type with python as "ENTER", you have to write ';' wh
 "1011001": "Y"
 "1011010": "Z"
 "1011011": "["
-"1011100": "\\"
+"1011100": "\"
 "1011101": "]"
 "1011110": "^"
 "1011111": "_"
@@ -97,4 +97,3 @@ For every '\n' you usually type with python as "ENTER", you have to write ';' wh
 "1111100": "|"
 "1111101": "}"
 "1111110": "~"
-"1111111": "DEL"
