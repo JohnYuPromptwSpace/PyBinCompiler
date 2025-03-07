@@ -213,7 +213,7 @@ Examples:
         try:
             return sys.argv[4]
         except:
-            return "untitled"
+            return "untitled.py"
     
     def load_content(self):
         PATH = os.getcwd() + "\\" + sys.argv[3]
