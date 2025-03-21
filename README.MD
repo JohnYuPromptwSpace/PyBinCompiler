@@ -15,7 +15,7 @@
 
 ### **Command Format**
 ```bash
-pybincompiler.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
+pybincompiler <run?> <make file?> <TargetFileName>.txt <FileName>.py
 ```
 
 ### **Arguments:**
@@ -32,28 +32,28 @@ pybincompiler.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
 
 ### ✅ Explanation:
 ```bash
-pybincompiler.py help
+pybincompiler help
 ```
 
 
 ### ✅ Run compiled code but do not save:
 ```bash
-pybincompiler.py True False my_binary.txt
+pybincompiler True False my_binary.txt
 ```
 
 ### ✅ Save compiled code as a `.py` file but do not run:
 ```bash
-pybincompiler.py False True my_binary.txt output.py
+pybincompiler False True my_binary.txt output.py
 ```
 
 ### ✅ Run compiled code and save it as a `.py` file:
 ```bash
-pybincompiler.py True True my_binary.txt output.py
+pybincompiler True True my_binary.txt output.py
 ```
 
 ### ❌ Missing arguments (will cause an error):
 ```bash
-pybincompiler.py True True
+pybincompiler True True
 ```
 **Error:** `"Missing file argument. Please provide a valid .txt file."`
 
@@ -81,7 +81,7 @@ pip install pybincompiler
 
 Run the compiler with:
 ```bash
-pybincompiler.py True True test.txt output.py
+pybincompiler True True test.txt output.py
 ```
 
 ---
