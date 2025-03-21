@@ -106,7 +106,7 @@ class PyBinCompiler():
 Hello, welcome to PyBinCompiler!
 
 Usage:
-    python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
+    pybincompiler.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
 
 Arguments:
     <run?>           (bool: True | False)  
@@ -127,16 +127,16 @@ Arguments:
 
 Examples:
     1. Run compiled code but do not save:
-    python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True False my_binary.txt
+    pybincompiler.py True False my_binary.txt
 
     2. Save compiled code as a file but do not run:
-    python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py False True my_binary.txt output.py
+    pybincompiler.py False True my_binary.txt output.py
 
     3. Run compiled code and save it as a file:
-    python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True my_binary.txt output.py
+    pybincompiler.py True True my_binary.txt output.py
 
     4. Missing arguments (will cause an error):
-    python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True
+    pybincompiler.py True True
 """
     
     class LengthValidationError(Exception):
@@ -156,32 +156,32 @@ Examples:
         """Exception raised when a specified file path does not exist."""
 
         def __init__(self, path):
-            super().__init__(f"Path not found: '{path}'. Please check if the file exists and the path is correct.\n\nType 'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help' for more.")
+            super().__init__(f"Path not found: '{path}'. Please check if the file exists and the path is correct.\n\nType 'pybincompiler.py help' for more.")
             self.path = path
         
     class MissingFileError(Exception):
         """Exception raised when the required file is missing in the command."""
         
         def __init__(self):
-            super().__init__(f"Error: No file specified for compilation. Please provide a valid filename. Try typing in the following format.\n\n'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help' for more.")
+            super().__init__(f"Error: No file specified for compilation. Please provide a valid filename. Try typing in the following format.\n\n'pybincompiler.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'pybincompiler.py help' for more.")
 
     class InvalidRunOptionError(Exception):
         """Exception raised when the 'run' option is missing or invalid."""
         
         def __init__(self, input__):
             if input__ == None:
-                super().__init__(f"Error: The 'run' option must be explicitly set to True or False: None. Try typing in the following format.\n\n'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help' for more.")
+                super().__init__(f"Error: The 'run' option must be explicitly set to True or False: None. Try typing in the following format.\n\n'pybincompiler.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'pybincompiler.py help' for more.")
             else:
-                super().__init__(f"Error: The 'run' option must be explicitly set to True or False: '{input__}'. Try typing in the following format.\n\n'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help' for more.")
+                super().__init__(f"Error: The 'run' option must be explicitly set to True or False: '{input__}'. Try typing in the following format.\n\n'pybincompiler.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'pybincompiler.py help' for more.")
             
     class InvalidMakeFileOptionError(Exception):
         """Exception raised when the 'makeFile' option is missing or invalid."""
         
         def __init__(self, input__):
             if input__ == None:
-                super().__init__(f"Error: The 'make file' option must be explicitly set to True or False: None. Try typing in the following format.\n\n'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help' for more.")
+                super().__init__(f"Error: The 'make file' option must be explicitly set to True or False: None. Try typing in the following format.\n\n'pybincompiler.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'pybincompiler.py help' for more.")
             else:
-                super().__init__(f"Error: The 'make file' option must be explicitly set to True or False: '{input__}'. Try typing in the following format.\n\n'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help' for more.")
+                super().__init__(f"Error: The 'make file' option must be explicitly set to True or False: '{input__}'. Try typing in the following format.\n\n'pybincompiler.py <run?: bool(True, False> <make file?: bool(True, False> <TargetFileName>.txt <FileName>.py'\n\nType 'pybincompiler.py help' for more.")
 
     def __init__(self):
         if len(sys.argv) < 2 or sys.argv[1] not in ("True", "False"):

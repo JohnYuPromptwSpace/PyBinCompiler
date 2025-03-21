@@ -15,7 +15,7 @@
 
 ### **Command Format**
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
+pybincompiler.py <run?> <make file?> <TargetFileName>.txt <FileName>.py
 ```
 
 ### **Arguments:**
@@ -32,28 +32,28 @@ python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py <run?> <make file?> <T
 
 ### ✅ Explanation:
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py help
+pybincompiler.py help
 ```
 
 
 ### ✅ Run compiled code but do not save:
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True False my_binary.txt
+pybincompiler.py True False my_binary.txt
 ```
 
 ### ✅ Save compiled code as a `.py` file but do not run:
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py False True my_binary.txt output.py
+pybincompiler.py False True my_binary.txt output.py
 ```
 
 ### ✅ Run compiled code and save it as a `.py` file:
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True my_binary.txt output.py
+pybincompiler.py True True my_binary.txt output.py
 ```
 
 ### ❌ Missing arguments (will cause an error):
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True
+pybincompiler.py True True
 ```
 **Error:** `"Missing file argument. Please provide a valid .txt file."`
 
@@ -88,14 +88,14 @@ PyBinCompiler includes built-in exception handling for various cases:
 ---
 
 ## 🛠 Installation
-To use PyBinCompiler, clone the repository:
+To use PyBinCompiler, use pip to install:
 ```bash
-git clone https://github.com/JohnYuPromptwSpace/PyBinCompiler
+pip install pybincompiler
 ```
 
 Run the compiler with:
 ```bash
-python toolchain/PyBinCompiler_v0.1/PyBinCompiler_v0.1.py True True test.txt output.py
+pybincompiler.py True True test.txt output.py
 ```
 
 ---
