@@ -59,20 +59,6 @@ pybincompiler.py True True
 
 ---
 
-## 📂 Project Structure
-
-```
-📦 PyBinCompiler
- ┣ 📂 toolchain
- ┃ ┣ 📂 PyBinCompiler_v0.1
- ┃ ┃ ┣ 📜 PyBinCompiler_v0.1.py # Main compiler script
- ┃ ┃ ┣ 📜 PyBinCompiler Version 0.1 Standard # Binary Code Information
- ┣ 📂 build # Compiled Python files
- ┣ 📜 README.MD # Documentation
-```
-
----
-
 ## ⚠️ Exception Handling
 PyBinCompiler includes built-in exception handling for various cases:
 
